@@ -24,10 +24,29 @@ function viewCart() {
   } else {
     var i = 0;
     for (let i = 0; i < cart.length; i++);
+    var itemNameAndPrice = cart[i];
+    var itemName = Object.keys(itemNameAndPrice);
+    var itemPrice = Object.values(itemNameAndPrice);
     console.log("In your cart, you have " + Object.keys(cart[i]) + " at $" + Object.values(cart[i])+ ".");
     i++;
   }
 }
+
+/*
+function viewCart() {
+  if (cart.length > 0) {
+    for (let i = 0; i < cart.length; i++) {
+      var itemAndPrice = cart[i]
+      var itemName = Object.keys(itemAndPrice)
+      var itemPrice = itemAndPrice[key]
+      console.log(`In your cart, you have ${itemName.join("and ")} at ${itemPrice.join(", ")}.`);
+    }
+  } else {
+    console.log ("Your shopping cart is empty.")
+  }
+}
+*/
+
 
 function total() {
   // write your code here
