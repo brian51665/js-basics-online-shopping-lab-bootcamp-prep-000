@@ -21,6 +21,14 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
+  } else if (cart.length === 1){
+    var i = 0;
+    for (let i = 0; i < cart.length; i++);
+    var itemNameAndPrice = cart[i];
+    var itemName = Object.keys(itemNameAndPrice);
+    var itemPrice = itemNameAndPrice[itemName];
+    console.log("In your cart, you have " + itemName + " at $" + itemPrice + ".");
+    i++;
   } else {
     var i = 0;
     for (let i = 0; i < cart.length; i++);
