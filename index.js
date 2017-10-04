@@ -27,7 +27,7 @@ function viewCart() {
     var itemNameAndPrice = cart[i];
     var itemName = Object.keys(itemNameAndPrice);
     var itemPrice = Object.values(itemNameAndPrice);
-    console.log("In your cart, you have " + Object.keys(cart[i]) + " at $" + Object.values(cart[i])+ ".");
+    console.log("In your cart, you have " + itemName + " at $" + itemPrice + ".");
     i++;
   }
 }
