@@ -29,24 +29,8 @@ function viewCart() {
     var itemPrice = itemNameAndPrice[itemName];
     console.log("In your cart, you have " + itemName + " at $" + itemPrice + ".");
     i++;
-  } 
-}
-
-/*
-function viewCart() {
-  if (cart.length > 0) {
-    for (let i = 0; i < cart.length; i++) {
-      var itemAndPrice = cart[i]
-      var itemName = Object.keys(itemAndPrice)
-      var itemPrice = itemAndPrice[key]
-      console.log(`In your cart, you have ${itemName.join("and ")} at ${itemPrice.join(", ")}.`);
-    }
-  } else {
-    console.log ("Your shopping cart is empty.")
   }
 }
-*/
-
 
 function total() {
   // write your code here
